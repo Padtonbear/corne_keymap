@@ -29,12 +29,7 @@
   combos {
     compatible = "zmk,combos";
 
-    shift {
-      bindings = <&kp LSHIFT>;
-      key-positions = <8 9>;
-    };
-
-    caps_word {
+    Caps_Lock {
       bindings = <&kp CAPS>;
       key-positions = <17 18>;
     };
@@ -46,7 +41,7 @@
 
     NumPad {
       bindings = <&to 3>;
-      key-positions = <6 7>;
+      key-positions = <7 8>;
     };
 
     Star {
@@ -64,9 +59,14 @@
       key-positions = <35 34>;
     };
 
-    Execl_Comment {
-      bindings = <&kp LA(LC(M))>;
-      key-positions = <5 4>;
+    Lshift {
+      bindings = <&kp LEFT_SHIFT>;
+      key-positions = <4 5>;
+    };
+
+    Rshift {
+      bindings = <&kp RSHFT>;
+      key-positions = <6 7>;
     };
   };
 
@@ -105,10 +105,10 @@
 
     NumPad {
       bindings = <
-&trans  &trans    &trans  &kp UP_ARROW     &trans  &bt BT_SEL 0    &bt BT_SEL 3        &kp KP_N7        &kp KP_N8  &kp KP_N9  &kp BACKSPACE  &to 0
-&trans  &trans  &kp LEFT      &kp DOWN  &kp RIGHT  &bt BT_SEL 1    &bt BT_SEL 4  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_N6      &kp SLASH  &none
-&trans  &trans    &trans        &trans     &trans  &bt BT_SEL 2      &bt BT_CLR        &kp KP_N1        &kp KP_N2  &kp KP_N3          &none  &none
-                                &trans     &trans        &trans          &trans        &kp KP_N0           &trans
+&bt BT_SEL 0  &bt BT_SEL 3    &trans  &kp UP_ARROW     &trans  &trans    &trans        &kp KP_N7        &kp KP_N8  &kp KP_N9  &kp BACKSPACE  &to 0
+&bt BT_SEL 1  &bt BT_SEL 4  &kp LEFT      &kp DOWN  &kp RIGHT  &trans    &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_N6      &kp SLASH  &none
+&bt BT_SEL 2    &bt BT_CLR    &trans        &trans     &trans  &trans    &trans        &kp KP_N1        &kp KP_N2  &kp KP_N3         &trans  &none
+                                            &trans     &trans  &trans    &trans        &kp KP_N0          &kp DOT
       >;
     };
   };
