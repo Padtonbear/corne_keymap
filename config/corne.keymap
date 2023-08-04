@@ -63,6 +63,11 @@
       bindings = <&kp LA(LC(DEL))>;
       key-positions = <35 34>;
     };
+
+    Execl_Comment {
+      bindings = <&kp LA(LC(M))>;
+      key-positions = <5 4>;
+    };
   };
 
   macros {
@@ -91,10 +96,10 @@
 
     lower {
       bindings = <
-&trans  &kp EXCL    &kp AT     &kp HASH     &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp SLASH
-&trans   &kp END  &kp HOME  &kp PAGE_UP  &kp PAGE_UP     &trans    &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-&trans    &trans    &trans       &trans       &trans     &trans    &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                                 &trans       &trans     &trans       &trans     &trans           &trans
+&trans  &kp EXCL    &kp AT       &kp HASH     &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp SLASH
+&trans   &kp END  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP     &trans    &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
+&trans    &trans    &trans         &trans       &trans     &trans    &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
+                                   &trans       &trans     &trans       &trans     &trans           &trans
       >;
     };
 
