@@ -29,7 +29,7 @@
 
     Caps_Lock {
       bindings = <&kp CAPS>;
-      key-positions = <17 18>;
+      key-positions = <17 16>;
     };
 
     delete {
@@ -45,11 +45,6 @@
     Star {
       bindings = <&kp RS(N8)>;
       key-positions = <3 4>;
-    };
-
-    Atl_Enter {
-      bindings = <&kp RA(ENTER)>;
-      key-positions = <1 2>;
     };
 
     Ctrl_Atl_Del {
@@ -70,6 +65,11 @@
     WIN_V {
       bindings = <&kp LG(V)>;
       key-positions = <25 26>;
+    };
+
+    excel_downrows {
+      bindings = <&kp LS(LC(DOWN_ARROW))>;
+      key-positions = <29 28>;
     };
   };
 
@@ -106,7 +106,7 @@
     NumPad {
       bindings = <
 &kp TAB  &trans  &trans    &kp UP_ARROW  &trans     &trans       &kp LEFT_PARENTHESIS   &kp KP_N7        &kp KP_N8        &kp KP_N9  &kp SLASH  &kp BACKSPACE
-&trans   &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans       &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_N6  &kp MINUS  &none
+&trans   &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans       &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_N6  &kp MINUS  &kp KP_NUMLOCK
 &trans   &trans  &mo 4     &trans        &trans     &kp COMMA    &kp KP_NUMBER_0        &kp KP_N1        &kp KP_N2        &kp KP_N3  &kp STAR   &to 0
                            &trans        &trans     &trans       &trans                 &kp PERIOD       &trans
       >;
