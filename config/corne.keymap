@@ -73,6 +73,22 @@
     };
   };
 
+  macros {
+    Calculator: Calculator {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp RG(S) &kp C &kp A &kp L &kp C &kp U &kp L &kp A &kp T &kp O &kp R &kp RET>;
+      label = "CALCULATOR";
+    };
+
+    Word: Word {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp RG(S) &kp W &kp O &kp R &kp D &kp RET>;
+      label = "WORD";
+    };
+  };
+
   keymap {
     compatible = "zmk,keymap";
 
