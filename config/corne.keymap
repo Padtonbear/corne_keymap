@@ -80,14 +80,6 @@
       bindings = <&kp RG(S) &kp C &kp A &kp L &kp RET>;
       label = "CALCULATOR";
     };
-
-    OPAS: OPAS {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings = <&kp RG(S) &kp C &kp M &kp D &kp RET &kp S &kp T &kp A &kp R &kp T &kp SPACE &kp M &kp S &kp E &kp D &kp G &kp E &kp SPACE &kp DQT &kp H &kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp O &kp P &kp A &kp S &kp DOT &kp Y &kp A &kp N &kp G &kp DOT &kp O &kp R &kp G &kp DOT &kp H &kp K &kp COLON &kp N9 &kp N4 &kp N4 &kp N3 &kp FSLH &kp Y &kp M &kp M &kp FSLH &kp A &kp D &kp M &kp I &kp N &kp FSLH &kp L &kp O &kp G &kp I &kp N &kp DOT &kp J &kp S &kp P &kp DQT &kp RET>;
-      label = "OPAS";
-      wait-ms = <500>;
-    };
   };
 
   keymap {
@@ -106,7 +98,7 @@
       bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4            &kp F5             &kp F6         &kp F7       &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
 &trans  &kp N1  &kp N2  &kp N3            &kp N4             &kp N5         &kp N6       &kp N7  &kp N8  &kp N9   &kp N0   &trans
-&to 4   &trans  &trans  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LG(TAB)    &Calculator  &OPAS   &trans  &trans   &trans   &trans
+&to 4   &trans  &trans  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LG(TAB)    &Calculator  &trans  &trans  &trans   &trans   &trans
                         &trans            &trans             &trans         &trans       &trans  &trans
       >;
     };
