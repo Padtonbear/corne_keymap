@@ -44,7 +44,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "SHIFT_CAPS";
       #binding-cells = <0>;
-      bindings = <&kp LEFT_SHIFT>, <&caps_word>;
+      bindings = <&kp LEFT_SHIFT>, <&kp CLCK>;
     };
   };
 
@@ -138,8 +138,8 @@
     Function {
       bindings = <
 &trans  &kp LC(LS(SPACE))  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 3    &kp GREATER_THAN  &kp KP_NUMLOCK        &kp SLASH              &kp ASTERISK  &trans  &trans
-&trans  &trans             &trans  &trans  &bt BT_SEL 1  &bt BT_SEL 4    &kp LT            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS      &trans  &trans
-&to 0   &trans             &trans  &trans  &bt BT_SEL 2  &bt BT_CLR      &none             &kp COLON             &kp PERCENT            &kp MINUS     &trans  &trans
+&trans  &kp LG(D)          &trans  &trans  &bt BT_SEL 1  &bt BT_SEL 4    &kp LT            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS      &trans  &trans
+&to 0   &trans             &trans  &trans  &bt BT_SEL 2  &bt BT_CLR      &kp SINGLE_QUOTE  &kp COLON             &kp PERCENT            &kp MINUS     &trans  &trans
                                    &trans  &trans        &trans          &kp EQUAL         &trans                &trans
       >;
     };
