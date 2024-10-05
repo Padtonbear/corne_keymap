@@ -106,13 +106,6 @@
       bindings = <&kp LA(H) &kp F &kp K>;
       label = "EXCEL_SMALLWORD";
     };
-
-    Paste_Values_Only: Paste_Values_Only {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings = <&kp LA(LC(V)) &kp V &kp ENTER>;
-      label = "PASTE_VALUES_ONLY";
-    };
   };
 
   keymap {
