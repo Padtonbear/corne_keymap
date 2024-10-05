@@ -86,12 +86,12 @@
 
     Right_Click {
       bindings = <&kp LS(F10)>;
-      key-positions = <24 38>;
+      key-positions = <6 7>;
     };
 
     Paste_Values_Only {
       bindings = <&Paste_Values_Only>;
-      key-positions = <27 24>;
+      key-positions = <24 25>;
     };
   };
 
