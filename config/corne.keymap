@@ -83,16 +83,6 @@
       bindings = <&kp LA(LC(COMMA))>;
       key-positions = <30 31>;
     };
-
-    Right_Click {
-      bindings = <&kp LS(F10)>;
-      key-positions = <6 7>;
-    };
-
-    Paste_Values_Only {
-      bindings = <&Paste_Values_Only>;
-      key-positions = <24 25>;
-    };
   };
 
   macros {
