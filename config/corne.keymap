@@ -171,10 +171,10 @@
 
     Mouse {
       bindings = <
-&kp TAB      &trans  &Double_Click  &trans     &trans     &trans    &trans  &trans          &mmv MOVE_UP    &trans           &trans  &trans
-&Shift_Caps  &trans  &mkp LCLK      &mkp MCLK  &mkp RCLK  &trans    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&kp RCTRL    &trans  &trans         &trans     &trans     &trans    &trans  &trans          &trans          &trans           &trans  &trans
-                                    &trans     &trans     &trans    &trans  &trans          &trans
+&kp TAB      &trans    &Double_Click  &trans          &trans     &trans    &trans  &trans          &mmv MOVE_UP    &trans           &trans  &trans
+&Shift_Caps  &trans    &mkp LCLK      &mkp MCLK       &mkp RCLK  &trans    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+&kp RCTRL    &kp LEFT  &kp UP_ARROW   &kp DOWN_ARROW  &kp RIGHT  &trans    &trans  &trans          &trans          &trans           &trans  &trans
+                                      &kp RIGHT_ALT   &to 0      &trans    &trans  &to 0           &trans
       >;
     };
   };
