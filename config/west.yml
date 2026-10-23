@@ -6,10 +6,13 @@ manifest:
       url-base: https://github.com/cormoran
   projects:
     - name: zmk
-      remote: cormoran
-      revision: v0.3+custom-studio-protocol   # 配合 v0.3 並支援 Custom Studio 協議的分支
+      remote: zmkfirmware
+      revision: v0.3   # 維持你目前能正常編譯的 v0.3 穩定版
       import: app/west.yml
     - name: zmk-feature-runtime-combo
+      remote: cormoran
+      revision: main
+    - name: zmk-feature-custom-settings
       remote: cormoran
       revision: main
   self:
