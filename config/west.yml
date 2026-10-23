@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3   # 維持你目前能正常編譯的 v0.3 穩定版
+      revision: main   # 維持你目前能正常編譯的 v0.3 穩定版
       import: app/west.yml
     - name: zmk-feature-runtime-combo
       remote: cormoran
