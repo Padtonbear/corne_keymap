@@ -6,8 +6,8 @@ manifest:
       url-base: https://github.com/cormoran
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main   # 維持你目前能正常編譯的 v0.3 穩定版
+      remote: cormoran
+      revision: main+custom-studio-protocol  # 👈 關鍵：改抓 cormoran 帶有自訂 RPC 協議與擴充 API 的 ZMK 分支
       import: app/west.yml
     - name: zmk-feature-runtime-combo
       remote: cormoran
