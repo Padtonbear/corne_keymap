@@ -2,23 +2,10 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: cormoran
-      url-base: https://github.com/cormoran
-    - name: a741725193
-      url-base: https://github.com/a741725193
   projects:
     - name: zmk
-      remote: cormoran
-      revision: main+custom-studio-protocol
-      import:
-        file: app/west.yml
-    - name: zmk-feature-runtime-combo
-      remote: cormoran
+      remote: zmkfirmware
       revision: main
-      import: true
-    - name: zmk-new_corne
-      remote: a741725193
-      revision: main
-      import: true
+      import: app/west.yml
   self:
     path: config
