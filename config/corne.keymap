@@ -3,6 +3,7 @@
  *
  * SPDX-License-Identifier: MIT
  */
+
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
 
@@ -18,16 +19,17 @@
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
 &msc {
-    acceleration-exponent = <1>;      // 0
-    time-to-max-speed-ms = <100>;       // 300
-    delay-ms = <0>;                   // 0
+  acceleration-exponent = <1>;      // 0
+  time-to-max-speed-ms = <100>;       // 300
+  delay-ms = <0>;                   // 0
 };
 
 &mmv {
-    time-to-max-speed-ms = <500>;
-    acceleration-exponent = <1>;
-    trigger-period-ms = <16>;
+  time-to-max-speed-ms = <500>;
+  acceleration-exponent = <1>;
+  trigger-period-ms = <16>;
 };
+
 // dt-formatter: indent = "  "
 // dt-formatter: reindentMultilineIntegerCells = "dedent"
 
@@ -151,10 +153,10 @@
     raise {
       display-name = "Raise";
       bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4            &kp F5             &kp F6         &kp F7       &kp F8          &kp F9            &kp F10  &kp F11  &kp F12
-&trans  &kp N1  &kp N2  &kp N3            &kp N4             &kp N5         &kp N6       &kp N7          &kp N8            &kp N9   &kp N0   &trans
-&trans  &mo 4   &trans  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LG(TAB)    &Calculator  &excel_bigword  &excel_smallword  &trans   &trans   &trans
-                        &trans            &trans             &trans         &trans       &trans          &trans
+&kp F1      &kp F2  &kp F3  &kp F4            &kp F5             &kp F6         &kp F7       &kp F8          &kp F9            &kp F10  &kp F11  &kp F12
+&bt BT_CLR  &kp N1  &kp N2  &kp N3            &kp N4             &kp N5         &kp N6       &kp N7          &kp N8            &kp N9   &kp N0   &trans
+&trans      &mo 4   &trans  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LG(TAB)    &Calculator  &excel_bigword  &excel_smallword  &trans   &trans   &trans
+                            &trans            &trans             &trans         &trans       &trans          &trans
       >;
     };
 
